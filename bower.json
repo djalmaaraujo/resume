@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "0.0.1",
+  "authors": [
+    "Djalma Araujo <djalma.araujo@gmail.com>"
+  ],
+  "description": "My Little Resume",
+  "license": "MIT",
+  "homepage": "http://resume.djalmaaraujo.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.styl": "~3.0.0"
+  }
+}

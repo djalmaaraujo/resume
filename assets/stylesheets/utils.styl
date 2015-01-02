@@ -1,0 +1,71 @@
+// Imports
+@import 'jeet';
+@import '../../bower_components/normalize.styl/normalize'
+
+// Colors
+cc-color = #e5274a;
+gray = #f7f7f8;
+blue = #0b2235;
+gray-txt = #8B8989;
+
+// Breakpoints
+$small-bp = 940px;
+
+// Go
+html {
+  box-sizing: border-box;
+}
+
+body {
+  border-top: 5px solid cc-color;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: cc-color;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: cc-color;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p, ul, time, address, .content {
+  color: gray-txt;
+  font-family: 'Lora', serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+.download-link {
+  font-size: 10px;
+  display: block;
+  margin-top: 20px;
+  
+  @media (max-width: $small-bp) {
+    display: none;
+  }
+  
+  @media print {
+    display: none;
+  }
+}
