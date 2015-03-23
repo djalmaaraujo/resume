@@ -4,7 +4,7 @@ resume.djalmaaraujo.com
 ## Setup
 ```bash
 bower install
-npm install -g stylus nib
+npm install -g stylus nib jeet
 ```
 
 ## Dev
