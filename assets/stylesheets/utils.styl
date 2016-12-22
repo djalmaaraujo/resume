@@ -19,6 +19,7 @@ html {
 body {
   border-top: 5px solid cc-color;
   font-family: 'Montserrat', sans-serif;
+  -webkit-print-color-adjust: exact;
 }
 
 a {
@@ -64,6 +65,22 @@ ul {
   @media (max-width: $small-bp) {
     display: none;
   }
+
+  @media print {
+    display: none;
+  }
+}
+
+.visible-print {
+  display: none;
+
+  @media print {
+    display: block;
+  }
+}
+
+.hide-for-print {
+  display: block;
 
   @media print {
     display: none;

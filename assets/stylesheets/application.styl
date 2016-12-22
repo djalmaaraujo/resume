@@ -36,10 +36,6 @@ header {
   padding: 20px 0;
   display: block;
 
-  &:first-child {
-    padding-top: 0;
-  }
-
   &:last-child {
     border-bottom: none;
   }
@@ -165,6 +161,12 @@ header {
 
 .talks-for-print {
   display: none;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  ul {
+    list-style-type: none;
+  }
 
   @media (max-width: $small-bp) {
     display: block;
@@ -182,6 +184,7 @@ header {
 
 .my-talks-screen {
   display: block;
+  clear: both;
 
   @media (max-width: $small-bp) {
     display: none;
@@ -191,6 +194,7 @@ header {
 .my-skills {
   border-top: 1px solid darken(gray, 5%);
   padding-top: 30px;
+  clear: both;
 
   @media (max-width: $small-bp) {
     border: none;
@@ -216,6 +220,10 @@ header {
 
 .skill-set {
   col(1/2);
+
+  h3 {
+    line-height: 40px;
+  }
 }
 
 footer {
@@ -225,8 +233,8 @@ footer {
   padding: 30px 0;
   color: gray-txt;
 
-  @media (max-width: $small-bp) {
-    padding-top: 0;
+  @media all and (max-width: $small-bp) {
+    line-height: 40px;
   }
 }
 
@@ -235,6 +243,10 @@ footer {
   right: 0;
   top: 40%;
   list-style-type: none;
+
+  h3 {
+    line-height: 50px;
+  }
 
   li a {
     display: block;
@@ -250,7 +262,6 @@ footer {
     span {
       display: none;
     }
-
   }
 
   @media (max-width: $small-bp) {
@@ -258,10 +269,12 @@ footer {
     text-align: center;
     padding-bottom: 20px;
     width: 100%;
+    min-height: 140px;
 
     li, a {
       display: inline-block;
-      width: 100%;
+      width: 50%;
+      float: left;
     }
 
     li a {
