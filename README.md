@@ -1,5 +1,5 @@
 # My Resume
-https://resume.djalmaaraujo.com
+https://djalma.nossomos.cc
 
 ## Setup
 ```bash
