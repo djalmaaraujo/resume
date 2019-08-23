@@ -14,8 +14,4 @@ python -m SimpleHTTPServer # for a simple http server http://localhost:8000
 ```
 
 ## Deploy
-I use wedeploy.com for static deployments. It's awesome. You should try. (free merchandise detected, hehe)
-
-```bash
-we deploy --project nossomosdotcc --service resume
-```
+- Push to master
