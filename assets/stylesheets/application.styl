@@ -2,7 +2,7 @@
 @import 'utils';
 
 main {
-  center(960px);
+  center(1100px);
 }
 
 // Header
@@ -66,8 +66,13 @@ header {
   font-size: 12px;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .wrapper {
-  cf();
   padding: 0;
   min-height: 80px;
   display: block;
@@ -79,12 +84,29 @@ header {
   }
 }
 
+.wrapper-middle {
+  width: 45%;
+}
+
+.wrapper-companies {
+  p, h2, h3, h4, ul {
+    text-align: right;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
 .header {
   col(4/12);
   text-align: left;
 
   h2 {
     margin-bottom: 10px;
+  }
+
+  small {
+    font-size: .7em;
   }
 
   @media (max-width: $small-bp) {
